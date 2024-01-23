@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>YogaFlex - Commack and Locust Valley, New York</title>
+	<meta name="description" content="Health, Physical Fitness, Yoga Studios, Instruction">
+	<meta http-equiv="keywords" content="">
+	
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS
+  ================================================== -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="http://www.yogaflexny.com/favicon.ico?v=2">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="stylesheet" href="css/styles.css?ver=1.2">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500,700,300" rel="stylesheet">
+    <script type="application/ld+json">
+		{ 
+			"@context" : "https://schema.org",
+			"@type" : "LocalBusiness",
+			"name" : "YogaFlex Commack",
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"telephone": "+1-631-462-9642",
+				"contactType": "customer service"
+			  },
+			"geo":{
+				"@type":"GeoCoordinates",
+                "latitude":40.876136,
+				"longitude":-73.597086
+			},
+			"telephone" : "+1-631-462-9642",
+			"priceRange" : "$25-$30",
+			"image" :"http://www.yogaflexny.com/images/yf-logo.png",
+			"address": {
+                "@type": "PostalAddress",
+					"streetAddress" : "639 Commack Road",
+					"addressLocality" : "Commack New York 11725",
+					"addressRegion" : "New York",
+					"postalCode" : "11725"},
+					"description" : "Hot Yoga is a series of 26 yoga poses and two breathing exercises done in a heated room and is perfect for all levels, including beginners.",
+					"url" : "http://yogaflexny.com",
+					"logo" : "http://www.yogaflexny.com/images/apple-touch-icon.png"
+			},
+			"openingHoursSpecification": [
+				{
+					"@type": "OpeningHoursSpecification",
+					"dayOfWeek": [
+					"Monday",
+					"Tuesday",
+					"Wednesday",
+					"Thursday",
+					"Friday"
+					],
+					"opens": "6:00",
+					"closes": "21:00"
+				},
+				{
+					"@type": "OpeningHoursSpecification",
+					"dayOfWeek": [
+					"Saturday",
+					"Sunday"
+					],
+					"opens": "6:30",
+					"closes": "13:00"
+				}
+				]
+		}
+	</script>
+</head>
+<body>
+	<!-- Primary Page Layout
+		================================================== -->
+	<div>
+		<div class="container">
+			<div class="eight columns">
+                <a href="./">
+				    <img alt="YogaFlex" src="images/yf-logo.png" class="logo-small">
+                </a>
+			</div>
+			<div class="eight columns t-align-rt">
+				<a class="button" href="http://onelink.quickgifts.com/merchant/yoga-flex">
+					Purchase gift certificates here!
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<header>
+        <nav class="ver-2">
+            <div class="container full-size" style="display:block;">
+                <div class="nav-container">
+                    <a href="./"><i class="icon-home"></i> Home</a>
+                    <a href="locust-valley-schedule.html">Locust Valley</a>
+                    <a href="commack-schedule.html" class="active">Commack</a>
+                    <a href="welcome.html">Welcome Information</a>
+                    <a href="location.html">Location</a>
+                    <a href="classes.html">Class Descriptions</a>
+                    <a href="teachers.html">Teachers</a>
+                    <a href="media.html">Media</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="events.html">Events</a>
+                    <!-- <a href="teacher-training.html">Teacher Training</a> -->
+                </div>
+            </div>
+            <div class="container half-size"  style="display:none;">
+                <label class="sr-only" for="Navigate">Navigate this site</label>
+				<select name="Choose page" id="Navigate" onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+                    <option value="">Navigation...</option>
+                    <option value="./">Home</option>
+                    <option value="welcome.html">Welcome</option>
+                    <option value="commack-schedule.html">Commack Schedule</option>
+                    <option value="locust-valley-schedule.html">Locust Valley Schedule</option>
+                    <option value="location.html">Location</option>
+                    <option value="classes.html">Class Descriptions</option>
+                    <option value="media.html">Media</option>
+                    <option value="faq.html">FAQ</option>
+                    <option value="teachers.html">Teachers</option>
+                    <option value="events.html">Events</option>
+                    <!-- <option value="teacher-training.html">Teacher Training</option> -->
+                </select>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Main Content Container -->
+    
+    <div class="container sm-scr-margin">
+
+            <h4>Commack Schedule</h4>
+
+            <div id='container1' 
+            class='ksiframe-container' 
+            data-module='schedule' 
+            data-options='clean=true&by_branch=91&hide_branch=true&only_classes=true&hide_lesson=true' 
+            data-target='https://yogaflexny.karmasoft.io'>
+            </div>
+            <script src="https://yogaflexny.karmasoft.io/assets/iframeapi.js"></script>
+
+
+</div>
+
+        <!-- <div class="fourteen columns offset-by-two">
+            
+                <h4>Commack Schedule</h4>
+                <label class="sr-only" for="sort">Sort classes</label>
+                <select id="sort" onchange="sort.getClasses(this.value)" class="sort">
+                    <option value="all">Sort classes by...</option>
+                    <option value="hot-yoga">Hot Yoga</option>
+                    <option value="hot-yoga-hour">Hot Yoga Hour</option>
+                    <option value="hot-vinyasa">Hot Vinyasa</option>
+                    <option value="hot-vinyasa-hour">Hot Vinyasa Hour</option>
+                    <option value="hot-yang-yin">Hot Yang/Yin Yoga</option>
+                    <option value="hot-barkan">Hot Barkan</option>
+                    <option value="hot-barkan-hour">Hot Barkan Hour</option>
+                    <option value="hot-silent-barkan-hour">Hot Silent Barkan Hour</option>
+                    <option value="hot-silent-hour">Hot Silent Hour</option>
+                    <option value="hot-power-flow">Hot Power Flow</option>
+                    <option value="hot-power-flow-hour">Hot Power Flow Hour</option>
+                    <option value="warm-flow">Warm Flow</option>
+                    <option value="yoga-boot-camp-hour">Yoga Boot Camp Hour</option>
+                    <option value="non-heated-gentle-yoga">Non-Heated Gentle Yoga</option>
+                    <option value="butt-legs-abs">30 Minute Butt-Legs-Abs</option>
+                    <option value="inferno-pilates">Inferno Hot Pilates</option>
+                    <option value="all">View All</option>
+                </select>
+    
+            <section id="schedule">
+    
+                <article id="monday">
+                    
+                    <div class="day-head">
+                        <span>Monday</span>
+                    </div>
+                    <div class="hot-silent-hour">
+                        <span>6:00 am</span>
+                        <span>Hot Silent Hour: Mel</span>
+                    </div>
+                    <div class="yoga-boot-camp-hour">
+                        <span>9:30 am</span>
+                        <span>Yoga Boot Camp Hour: Marni</span>
+                    </div>
+                    <div class="butt-legs-abs">
+                        <span>10:45 am</span>
+                        <span>30 Minute Butt-Legs-Abs: Marni</span>
+                    </div>
+                    <div class="hot-yoga-hour">
+                        <span>11:45 am</span>
+                        <span>Hot Yoga Hour: Karen</span>
+                    </div>
+                    <div class="hot-yang-yin">
+                        <span>4:00 pm</span>
+                        <span>Hot Yang/Yin Yoga (75 minutes): Chris O.</span>
+                    </div>
+                    <div class="hot-vinyasa-hour">
+                        <span>6:00 pm</span>
+                        <span>Hot Vinyasa Hour: Dana</span>
+                    </div>
+                    <div class="hot-yoga-hour">
+                        <span>8:00 pm</span>
+                        <span>Hot Yoga Hour: Mel</span>
+                    </div>
+    
+                   </article>
+                   <article id="tuesday">
+    
+                     <div class="day-head">
+                        <span>Tuesday</span>
+                     </div>
+                     <div class="hot-silent-barkan-hour">
+                        <span>6:00 am</span>
+                        <span>Hot Silent Barkan Hour: Karen</span>
+                    </div>
+                    <div class="hot-yoga">
+                        <span>9:30 am</span>
+                        <span>Hot Yoga (75 minutes): Dana</span>
+                    </div>
+                    <div class="warm-flow">
+                        <span>11:45 am</span>
+                        <span>Warm Flow (75 minutes): Gene</span>
+                    </div>
+                    <div class="hot-power-flow">
+                        <span>4:00 pm</span>
+                        <span>Hot Power Flow (75 minutes): Laura K.</span>
+                    </div>
+                    <div class="hot-yoga-hour">
+                        <span>6:00 pm</span>
+                        <span>Hot Yoga Hour: Jane</span>
+                    </div>
+                    <div class="hot-barkan-hour">
+                        <span>8:00 pm</span>
+                        <span>Hot Barkan Hour: Dana</span>
+                    </div>
+    
+                   </article>
+                   <article id="wednesday">
+    
+                    <div class="day-head">
+                        <span>Wednesday</span>
+                    </div>
+                    <div class="hot-silent-hour">
+                        <span>6:00 am</span>
+                        <span>Hot Silent Hour: Dana</span>
+                    </div>
+                    <div class="hot-vinyasa">
+                        <span>9:30 am</span>
+                        <span>Hot Vinyasa (75 minutes): Karen</span>
+                    </div>
+                    <div class="hot-yoga">
+                        <span>4:00 pm</span>
+                        <span>Hot Yoga (75 minutes): Chris O.</span>
+                    </div>
+                    <div class="yoga-boot-camp-hour">
+                        <span>6:00 pm</span>
+                        <span>Yoga Boot Camp Hour: Chris O.</span>
+                    </div>
+                    <div class="hot-yoga-hour">
+                        <span>8:00 pm</span>
+                        <span>Hot Yoga Hour: Dana</span>
+                    </div>
+    
+                   </article>
+                   <article id="thursday">
+    
+                    <div class="day-head">
+                        <span>Thursday</span>
+                    </div>
+                    <div class="hot-silent-barkan-hour">
+                        <span>6:00 am</span>
+                        <span>Hot Silent Barkan Hour: Dana</span>
+                    </div>
+                    <div class="hot-yoga">
+                        <span>9:30 am</span>
+                        <span>Hot Yoga (75 minutes): Mel</span>
+                    </div>
+                    <div class="warm-flow">
+                        <span>11:45 am</span>
+                        <span>Warm Flow (75 minutes): Gene</span>
+                    </div>
+                    <div class="hot-power-flow">
+                        <span>4:00 pm</span>
+                        <span>Hot Power Flow (75 minutes): Christine</span>
+                    </div>
+                    <div class="hot-yoga-hour">
+                        <span>6:00 pm</span>
+                        <span>Hot Yoga Hour: Mel</span>
+                    </div>
+                    <div class="hot-barkan-hour">
+                        <span>8:00 pm</span>
+                        <span>Hot Barkan Hour: Lori D.</span>
+                    </div>
+    
+                   </article>
+                   <article id="friday">
+    
+                    <div class="day-head">
+                        <span>Friday</span>
+                    </div>
+                    <div class="hot-silent-hour">
+                        <span>6:00 am</span>
+                        <span>Hot Silent Hour: Mel</span>
+                    </div>
+                    <div class="hot-vinyasa">
+                        <span>9:30 am</span>
+                        <span>Hot Vinyasa (75 minutes): Chris O.</span>
+                    </div>
+                    <div class="hot-yoga-hour">
+                        <span>4:00 pm</span>
+                        <span>Hot Yoga Hour: Laura K.</span>
+                    </div>
+                    <div class="hot-barkan-hour">
+                        <span>5:30 pm</span>
+                        <span>Hot Barkan Hour: Ally</span>
+                    </div>
+    
+                   </article>
+                   <article id="saturday">
+    
+                    <div class="day-head">
+                        <span>Saturday</span>
+                    </div>
+                    <div class="hot-yoga">
+                        <span>8:00 am</span>
+                        <span>Hot Yoga (75 minutes): Barbra</span>
+                    </div>
+                    <div class="hot-barkan">
+                        <span>10:00 am</span>
+                        <span>Hot Barkan (75 minutes): Dana</span>
+                    </div>
+                    <div class="hot-yoga-hour">
+                        <span>12:00 pm</span>
+                        <span>Hot Yoga Hour: Dana</span>
+                    </div>
+                    <div class="inferno-pilates">
+                        <span>4:00 pm</span>
+                        <span>Inferno Hot Pilates: Fawn</span>
+                    </div>
+    
+                   </article>
+                   <article id="sunday">
+    
+                    <div class="day-head">
+                        <span>Sunday</span>
+                    </div>
+                    <div class="hot-yoga">
+                        <span>8:00 am</span>
+                        <span>Hot Yoga (75 minutes): Lori</span>
+                    </div>
+                    <div class="hot-vinyasa">
+                        <span>10:00 am</span>
+                        <span>Hot Vinyasa (75 minutes): Karen</span>
+                    </div>
+                    <div class="hot-yoga-hour">
+                        <span>12:00 pm</span>
+                        <span>Hot Yoga Hour: Karen</span>
+                    </div>
+                    <div class="hot-power-flow">
+                        <span>4:00 pm</span>
+                        <span>Hot Power Flow (75 minutes): Gene</span>
+                    </div>
+                    <div class="non-heated-gentle-yoga">
+                        <span>5:30 pm</span>
+                        <span>Non-Heated Gentle Yoga (75 minutes): Gene</span>
+                    </div>
+                   </article>
+                    
+            </section>
+    
+        </div> -->
+
+    </div>
+
+
+	<footer>		
+		<div class="container">
+			<div class="one-third column foot-bg">
+				<h6>Get Social</h6>
+				 <a href="https://twitter.com/yogaflexny"><span class="sr-only">Twitter</span><span class="soc-icons tw"></span></a>
+				 <a href="https://foursquare.com/v/yoga-flex/4da0818e5970b1f73d615b1e"><span class="sr-only">Foursquare</span><span class="soc-icons fs"></span></a>
+				 <a href="https://plus.google.com/109702549323460869297/about"><span class="sr-only">Google Plus</span><span class="soc-icons gg"></span></a>
+				 <a href="https://www.facebook.com/pages/YogaFlex/108158419248761"><span class="sr-only">Facebook</span><span class="soc-icons fb"></span></a>
+				 <a href="http://local.yahoo.com/info-80581983-yogaflex-commack"><span class="sr-only">Yahoo</span><span class="soc-icons yh"></span></a>
+			</div>
+			<div class="one-third column foot-bg">
+                    <h6>Contact</h6>
+                    <div class="vcard">
+                        <div class="org bold">YogaFlex - Commack</div>
+                            <div class="adr">
+                            <div class="street-address">639 Commack Road</div>
+                            <span class="locality">Commack</span>
+                            <span class="region">New York</span>
+                            <span class="postal-code">11725</span><br>
+                            <a class="email" href="mailto:Dana526811@aol.com">Click to email us</a> or call:
+                            <span style="display:none" class="country-name">United States</span>
+                            </div>
+                            <div class="tel">
+                                <a href="tel:16314629642"> <i class="icon-phone"></i>  631-462-YOGA (9642)</a>
+                            </div>
+                            <div style="display:none">
+                                <span class="category">yoga</span>,
+                                <span class="category">hot yoga</span>,
+                                <span class="category">vinyasa yoga</span>,
+                                <span class="category">Commack</span>, 
+                                <span class="category">heated room</span>,
+                                <span class="category">ashtanga</span>,
+                                <span class="category">astanga</span>,
+                                <span class="category">heat</span>,
+                                <span class="category">health</span>,
+                                <span class="category">hot</span>
+                            </div>
+                        </div>
+			</div>
+			<div class="one-third column foot-bg">
+				<h6>Locations</h6>
+				<a href="location.html"><img src="images/map-static.jpg" alt="Click to view map"></a>
+			</div>
+		</div><!-- container -->
+	</footer>
+
+
+<!-- End Document
+================================================== -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47257870-1', 'yogaflexny.com');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript" src="js/sorting.js?ver=0.0.2"></script>
+
+</body>
+</html>

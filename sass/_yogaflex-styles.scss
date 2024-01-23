@@ -1,0 +1,392 @@
+@import "compass/css3";
+@import "compass/typography/links";
+@import "rem-px-ellipsis";
+
+// Spacing variables
+$spacing-xsm:  0.2em;
+$spacing-sm:   0.5em;
+$spacing-med:  1em;
+$spacing-lrg:  1.5em;
+$sizing-lrg:   1.5em;
+$spacing-xlrg: 2em;
+$spacing-xxlrg: 4.5em;
+
+// Color variables
+$body-bg: #f2f2f2;
+$med-grey: #ccc;
+$font-color: #515151; // Dark Gray
+$dark-grey: #999;
+$link-color: red;     // Dark Orange
+
+$primary: #452792; // Purple rgb 69, 39, 146
+$primary-dark: darken($primary, 15%);
+$primary-light: lighten($primary, 25%);
+
+body { background-color: $body-bg; }
+
+.name-line {
+	display: inline-block;
+	margin: 0
+}
+#schedule {
+	line-height: 1.4;
+}
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
+// ======================================
+// Schedule & Rates Section
+// ======================================
+
+section {
+	border: 1px solid $dark-grey;
+	border-bottom: 0;
+	box-sizing: border-box;
+	background-color: white;
+	color: #444;
+	&.bor-bot {
+		border-bottom: 1px solid $dark-grey;
+	}
+	article {
+		.intro-head {
+			font-size: 18px;
+			font-weight: bold;
+			padding: .5rem 0;
+			span {
+				display: inline;
+				line-height: 1.5;
+				float: none;
+				transition: color 3s ease;
+			}
+			p {
+				line-height: .7;
+				font-size: .8rem;
+				font-weight: normal;
+				font-style: italic;
+			}
+			.price {
+				color: red;
+			}
+		}
+		.day-head {
+			font-size: 1.1rem;
+			font-weight: bold;
+			span:first-child { text-align: left; }
+		}
+
+		div {
+			border-bottom: 1px solid $med-grey;
+			overflow: auto;
+
+			&:last-of-type {
+				border-bottom: 1px solid $dark-grey;
+			}
+			span {
+				display: block;
+				padding: .5rem .3rem .3rem;
+				float: left;
+			&:first-of-type {
+					width: 35%;
+					text-align: right; 
+				}
+			&:last-of-type {
+					width: 65%;
+				}
+			}
+		}
+	}
+}
+
+.make-hidden {
+	display: none;
+}
+.make-visible {
+	display: block;
+}
+
+select.sort {
+	@include px-and-rem(font-size, 1.5);
+	@include px-and-rem(line-height, 2);
+	margin: .5rem 0;
+	text-indent: 10px;
+	width: 100%;
+}
+// ======================================
+
+
+
+
+@media only screen and (max-width: 960px) {
+	.full-size { display: none !important; }
+	.half-size { 
+		display: block !important;
+		@include px-and-rem(padding, .5);
+		select {
+			@include px-and-rem(font-size, 1.5);
+			@include px-and-rem(margin, .5);
+			@include px-and-rem(line-height, 2);
+			text-indent: 10px;
+			width: 90%;
+		}
+	}
+}
+@media only screen and (min-width: 960px) {
+	.full-size { display: block !important; }
+	.half-size { display: none !important; }
+}
+
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+// General Link Colors
+a { @include link-colors($link-color, $primary, $link-color, $link-color, $primary); }
+a.links { 
+	@include px-and-rem(margin, 1);
+	display: block;
+	text-decoration: none;
+}
+a.basic-links { 
+	display: inline;
+	text-decoration: none;
+}
+img { width: 100%; }
+
+
+img.logo { 
+	width: 100%;
+}
+
+img.alert { 
+	width: 100%; 
+	@include px-and-rem(margin, 1, 0, 1, 0);
+}
+img.event {
+	border: 1px solid #8e8d8d;
+}
+
+.alert-img { 
+	@include px-and-rem(margin, 0);
+	display: block;
+	max-width: 480px;
+	margin: 0 auto;
+}
+ul li { @include px-and-rem(margin-top, 1); }
+ol li { margin-left: 0; }
+h1, h2, h3, h4, h5 { 
+	color: $font-color;
+}
+h1 { 
+	@include px-and-rem(font-size, 5);  
+	font-family: 'Roboto', sans-serif; 
+	font-weight: 500; 
+}
+h2 { @include px-and-rem(font-size, 3.5); @include px-and-rem(margin, 2, 0, 0, 0);  }
+h3 { @include px-and-rem(font-size, 2);   @include px-and-rem(margin, 2, 0, 0, 0);  }
+h4 { 
+	@include px-and-rem(font-size, 2); 
+	@include px-and-rem(margin, 1, 0, .5, 0);
+	font-family: 'Roboto', sans-serif; 
+	font-weight: 500; 
+	color: $primary;
+}
+.remove-top { margin-top: 0; }
+h5 { 
+	@include px-and-rem(font-size, 1.5);
+	@include px-and-rem(margin, 2, 0, 0, 0);
+	@include px-and-rem(padding, .5, 1, .5, 1);
+	color: $primary;
+	border-bottom: 1px solid #666;
+	letter-spacing: 0px;
+}
+.sub-title {
+	@include px-and-rem(margin, .5, 0, .5, 0);
+	@include px-and-rem(font-size, 1);
+	@include px-and-rem(line-height, 1.8);
+	color: $primary;
+	display: block;
+	a { @include link-colors($primary, $primary, $link-color, $primary, $primary); text-decoration: none; }
+}
+
+
+.masthead {
+	height: 380px;
+	@media only screen and (max-width: 767px) {
+		height:250px;
+	}
+	@media only screen and (max-width: 479px) {
+		height: 150px;
+	}
+}
+.container .nav-container { margin: 0 auto; text-align: center;}
+.top-border { border-top: 1px solid #dededc; }
+$top-border-light: rgba(255,255,255,0.35);
+.top-border-light { border-top-color: $top-border-light }
+nav {
+	// height: 60px;
+	margin: 0 auto;
+	font-size: 0;
+	margin-top: 123px;
+	div a {
+		@include link-colors(#c9c7c7, #c9c7c7, #c9c7c7, #c9c7c7, #c9c7c7);
+		@include px-and-rem(padding, 1); 
+		@include px-and-rem(font-size, 1.3);
+		display: inline-block;
+		margin: .2rem 0;
+		text-decoration: none;	
+		transition-property: background-color;
+		transition-duration: .3s; 
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300; 
+		&:hover {
+			color: #fff;
+			background-color: $top-border-light
+		}
+	  }
+	}
+.active { border-bottom: 1px solid #c9c7c7; }
+p {
+	@include px-and-rem(margin, .3, 0, .5, 1); 
+	@include px-and-rem(line-height, 1.5);
+}
+.sm-scr-margin {
+	@media only screen and (max-width: 960px) {
+		margin-top: 5rem !important;
+	}
+}
+
+nav.ver-2 {
+	height: 8.5rem;
+	background-color: rgba(69, 39, 146, .9);
+	@media only screen and (max-width: 960px) {
+		background-color: transparent;
+		padding-top: 8.5rem;
+	}
+}
+
+img.logo-small { 
+	width: 393px;
+	margin: .3rem 0 0 0;
+	@media only screen and (max-width: 960px) {
+		width: 100%;
+	}
+}
+.graphic-logo {
+	margin: 1rem auto 7rem auto;
+	width: 300px;
+	@media only screen and (max-width: 960px) {
+		width: 180px;
+		margin: 0 auto;
+	}
+}
+
+header {
+	border-top: 5px solid $primary;
+	border-bottom: 5px solid $primary;
+	background-color: $primary-dark;
+	background: url(../images/class-header.jpg?=) no-repeat scroll center center;
+	// background: url(../images/yoga-large-1.jpg) no-repeat scroll center center;
+	background-size: cover;
+	color: white;
+	width: 100%;
+	height: 30rem;
+	padding-top: 22rem;
+	margin-bottom: 10rem;
+	@media only screen and (max-width: 960px) {
+		height: 18rem;
+		padding-top: 3rem;
+		margin-bottom: 5rem;
+	}
+}
+h1.logo {
+	height: 100%;
+}
+footer {
+	@include px-and-rem(margin-top, 4); 
+	background: url(../images/pattern.svg) $primary repeat;
+	color: #222;
+	padding-bottom: 80px;
+	line-height: 1.4em;
+	width: 100%;
+	a { @include link-colors($primary-dark, $primary-dark, $primary, $primary-dark, $primary-dark);
+		text-decoration: none;
+	}
+	.foot-bg {
+		padding: 1rem 1rem 2rem;
+		margin-top: 1rem !important; 
+		background: #f2f2f2;
+		min-height: 16rem;
+		
+    	@media only screen and (max-width: 767px) {
+			min-height: auto;
+		}
+	img { margin: 0; }
+	}
+}
+
+// Footer headlines
+h6 {
+	@include px-and-rem(font-size, 1);
+	@include px-and-rem(margin, .5, 0, .5, 0 );
+	@include px-and-rem(padding-bottom, .5);
+	@include ellipsis();
+	border-bottom: 1px solid $dark-grey;
+	color: $primary-dark;
+	font-family: 'Roboto', sans-serif; 
+	font-weight: 700; 
+}
+
+// Sprite
+.soc-icons {
+	background-image: url('../images/soc-icon-sprite.png'); 
+	height: 62px;
+	display: inline-block;
+	width: 62px;
+}
+.tw { background-position: 0px 0px }
+.fs { background-position: -65px 0px }
+.gg { background-position: -128px 0px }
+.yh { background-position: -190px 0px }
+.fb { background-position: -254px 0px }
+.yp { background-position: -317px 0px }
+
+.teachers {
+	@include px-and-rem(margin, .5);
+	margin-right: 0;
+	float: right;
+	width: 200px;
+	height: 200px;
+}
+
+@media only screen and (max-width: 767px) {
+	.tt-img {
+		display: none;
+	}
+}
+
+/* ==========================================================================
+   Spacing Helpers
+   ========================================================================== */
+.vcard       { color: $font-color; }
+.bold        { font-weight: bold; font-weight: 600; }
+.pull-rt     { float: right;}
+.pull-lt     { float: left;}
+.t-align-rt  { text-align: right; }
+.t-align-ct  { text-align: center; }
+.t-align-lt  { text-align: left;}
+.med-line-ht { @include px-and-rem(line-height, 1.4); }
+.ellipsis    { @include ellipsis(); }
+.bot-mar     { @include px-and-rem(margin-bottom, 1); }
+.pad-top-sm  { @include px-and-rem(padding-top, .5); }
+.pad-top-med { @include px-and-rem(padding-top, 1); }
+.pad-bot-sm  { @include px-and-rem(padding-bottom, .5); }
+.pad-left-sm { @include px-and-rem(padding-left, .5); }
+.top-margin  { margin-top: 1rem !important; }
+
+
+
