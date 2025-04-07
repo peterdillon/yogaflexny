@@ -27,7 +27,6 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
     <link rel="stylesheet" href="css/styles.css?ver=1.1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:500,700,300" rel="stylesheet">
 </head>
 <body>
 	<!-- Primary Page Layout
@@ -64,14 +63,14 @@
 					<!-- <a href="teacher-training.html">Teacher Training</a> -->
 				</div>
 			</div>
-			<div class="container half-size"  style="display:none;">
-				<label class="sr-only" for="Navigate">Navigate this site</label>
-				<select name="Choose page" id="Navigate" onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+            <div class="container half-size"  style="display:none;">
+                <label class="sr-only" for="Navigate">Navigate this site</label>
+				<select name="Navigate" id="Navigate" onchange="window.open(this.options[this.selectedIndex].value,'_top')">
 		            <option value="">Navigation...</option>
                     <option value="./">Home</option>
                     <option value="welcome.html">Welcome</option>
-                    <option value="commack-schedule.html">Commack</option>
-		            <option value="locust-valley-schedule.html">Welcome</option>
+                    <option value="commack-schedule.html">Commack Schedule</option>
+		            <option value="locust-valley-schedule.html">Locust Valley Schedule</option>
 		            <option value="location.html">Location</option>
 					<option value="classes.html">Class Descriptions</option>
 					<option value="media.html">Media</option>
@@ -89,55 +88,67 @@
     
     <div class="container sm-scr-margin">
         <div class="eight columns">
+
             <h4>Announcements</h4>
             <section class="bor-bot">
-                <h6 style="padding-left: 1rem; color: red">Welcome ALL students new and familiar!</h6>
-                <p class="text-center">We now have two locations (Locust Valley Hot Yoga is now YogaFlex) and have put the schedules on seperate pages for your convenience.</p>
-                <p>&nbsp;</p>
-                <h4 style="padding-left: 1rem; color: chartreuse !important"><a href="commack-schedule.html">Commack Schedule</a></h4>
-                <h4 style="padding-left: 1rem; color: orange"><a href="locust-valley-schedule.html">Locust Valley Schedule</a></h4>
+                <img alt="announcements" src="https://docs.google.com/drawings/d/1xMsmlK1-AUniH79OLHQoTrOdidglLlnizZDDMXzeM1U/pub?w=480&h=288">
+                <h3 style="text-align: center; margin: 0; padding-bottom: 1rem">
+                    <a href="https://yogaflexny.karmasoft.io/member/accounts/sign_up?in_studio_sign_up=true">SIGN UP HERE!</a>
+                </h3>
             </section>
+            
         </div>
         <div class="eight columns">
+
+            <h4>Choose Location</h4>
+            <section class="bor-bot" style="text-align: center; padding: 1rem 1rem 2rem 1rem">
+                <h4><a style="color: #2aa3ef" href="commack-schedule.html">Commack Schedule</a></h4>
+                <h4><a style="color: #d12aef" href="locust-valley-schedule.html">Locust Valley Schedule</a></h4>
+            </section>
+                    
             <h4>Rates</h4>
             <section>
                 <article>
                     <div class="intro-head t-align-ct">
                         Introductory Special:<br> 
-                        <span class="price">$35 for 10 Days!</span>
+                        <span class="price">$50 for 10 Days!</span>
                         <p>(Includes mat and towel rental)</p>
                     </div>
                     <div>
                         <span>Single Class:</span>
-                        <span>$25</span>
+                        <span>$30</span>
                     </div>
                     <div>
-                        <span>Five Classes:</span>
-                        <span>$95 (expires in 3 months)</span>
+                        <span>5 Class Card:</span>
+                        <span>$120 (3 month expiration)</span>
                     </div>
                     <div>
-                        <span>Ten Classes:</span>
-                        <span>$170 (expires in 3 months)</span>
+                        <span>10 Class Card:</span>
+                        <span>$220 (3 month expiration)</span>
                     </div>
                     <div>
-                        <span>Monthly Auto Debit:</span>
-                        <span>$150 (3 month minimum)</span>
+                        <span>25 Class Card:</span>
+                        <span>$440 (3 month expiration)</span>
                     </div>
                     <div>
-                        <span>Monthly Unlimited:</span>
-                        <span>$180</span>
+                        <span>Monthly Auto-Debit:</span>
+                        <span>$170</span>
+                    </div>
+                    <div> 
+                        <span>Yearly Unlimited:</span>
+                        <span>$1850</span>
                     </div>
                     <div>
                         <span>6 Month Unlimited:</span>
-                        <span>$850</span>
+                        <span>$975</span>
                     </div>
-                    <div>
-                        <span>1 Year Unlimited:</span>
-                        <span>$1500</span>
+                    <div class="intro-head t-align-ct">
+                        <p>Class packages cannot be shared</p>
                     </div>
                 </article>
             </section>
         </div>
+        
     </div>
 
 
@@ -145,11 +156,11 @@
     <div class="container sm-scr-margin">
         <div class="eight columns">
             <br>
-            <img src="images/water-bottles.jpg">
+            <img alt="YogaFlex Products" src="images/water-bottles.jpg">
         </div>
         <div class="eight columns">
                 <br>
-            <img src="images/d-and-k.jpg">
+            <img alt="Dana and Karen" src="images/d-and-k.jpg">
         </div>
     </div>
 
@@ -165,33 +176,51 @@
 				 <a href="http://local.yahoo.com/info-80581983-yogaflex-commack"><span class="sr-only">Yahoo</span><span class="soc-icons yh"></span></a>
 			</div>
 			<div class="one-third column foot-bg">
-				<h6>Contact</h6>
-	      		<div class="vcard">
-				 <div class="org bold">YogaFlex</div>
-				 <div class="adr">
-				  <div class="street-address">639 Commack Road</div>
-				  <span class="locality">Commack</span>
-				  <span class="region">New York</span>
-				  <span class="postal-code">11725</span><br>
-				   <a class="email" href="mailto:Dana526811@aol.com">Click to email us</a> or call:
-				  <span style="display:none" class="country-name">United States</span>				 </div>
-				 <div class="tel"><a href="tel:16314629642"><i class="icon-phone"></i> 631-462-YOGA (9642)</a></div>
-				<div style="display:none">
-					<span class="category">yoga</span>,
-					<span class="category">hot yoga</span>,
-					<span class="category">vinyasa yoga</span>,
-					<span class="category">Commack</span>, 
-					<span class="category">heated room</span>,
-					<span class="category">ashtanga</span>,
-					<span class="category">astanga</span>,
-					<span class="category">heat</span>,
-					<span class="category">health</span>,
-					<span class="category">hot</span>
-				</div>
-				</div>
+                    <h6>Contact</h6>
+                    <div class="vcard">
+                   <div class="org bold">YogaFlex - Commack</div>
+                      <div class="adr">
+                      <div class="street-address">639 Commack Road</div>
+                      <span class="locality">Commack</span>
+                      <span class="region">New York</span>
+                      <span class="postal-code">11725</span><br>
+                      <a class="email" href="mailto:Dana526811@aol.com">Click to email us</a> or call:
+                      <span style="display:none" class="country-name">United States</span>
+                      </div>
+                      <div class="tel">
+                          <a href="tel:16314629642"> <i class="icon-phone"></i>  631-462-YOGA (9642)</a>
+                      </div>
+                      <div style="display:none">
+                          <span class="category">yoga</span>,
+                          <span class="category">hot yoga</span>,
+                          <span class="category">vinyasa yoga</span>,
+                          <span class="category">Commack</span>, 
+                          <span class="category">heated room</span>,
+                          <span class="category">ashtanga</span>,
+                          <span class="category">astanga</span>,
+                          <span class="category">heat</span>,
+                          <span class="category">health</span>,
+                          <span class="category">hot</span>
+                      </div>
+                  </div>
+                  <hr>
+                  <div class="vcard">
+                      <div class="org bold">YogaFlex - Locust Valley</div>
+                      <div class="adr">
+                          <div class="street-address">49 Birch Hill Road</div>
+                          <span class="locality">Locust Valley</span>
+                          <span class="region">New York</span>
+                          <span class="postal-code">11560</span><br>
+                          <a class="email" href="mailto:Dana526811@aol.com">Click to email us</a> or call:
+                          <span style="display:none" class="country-name">United States</span>
+                      </div>
+                      <div class="tel">
+                          <a href="tel:15162772700"><i class="icon-phone"></i> 516-277-2700</a>
+                      </div>
+                  </div>
 			</div>
 			<div class="one-third column foot-bg">
-				<h6>Map</h6>
+				<h6>Locations</h6>
 				<a href="location.html"><img src="images/map-static.jpg" alt="Click to view map"></a>
 			</div>
 		</div><!-- container -->
@@ -211,5 +240,6 @@
 
 </script>
 <script type="text/javascript" src="js/sorting.js?ver=0.0.2"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:500,700,300" rel="stylesheet">
 </body>
 </html>
